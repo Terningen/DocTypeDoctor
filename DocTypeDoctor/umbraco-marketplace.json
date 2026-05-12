@@ -1,14 +1,14 @@
 {
-    "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json", 
+    "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
     "AuthorDetails": {
-      "Name": "Terningen, Kim Gordon Taanning",
+      "Name": "Kim Gordon Taanning",
       "ImageUrl": "https://github.com/Terningen.png"
     },
-    "Category": "",
-    "Description": "",
+    "Category": "Editor",
+    "Description": "Doc Type Doctor helps you analyze and manage your Umbraco document types with ease. Identify unused properties, find inconsistencies, and keep your content model healthy.",
     "LicenseTypes": [ "Free" ],
     "IssueTrackerUrl": "https://github.com/Terningen/Umbraco.Community.DocTypeDoctor/issues",
     "PackageType": "Package",
-    "Tags": [],
-    "Title": "Doc Type Doctor "
+    "Tags": [ "doctype", "editor", "content-model", "analysis", "umbraco" ],
+    "Title": "Doc Type Doctor"
   }

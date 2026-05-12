@@ -15,10 +15,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'src/DocTypeDoctor/Client/package-lock.json'
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: 10.0.x
+
+      - name: Build Client Assets
+        run: |
+          cd src/DocTypeDoctor/Client
+          npm ci
+          npm run build
 
       - name: Build & Pack
         run: dotnet pack src/DocTypeDoctor/DocTypeDoctor.csproj -c Release /p:Version=${{github.ref_name}}
