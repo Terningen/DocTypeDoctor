@@ -1,0 +1,15 @@
+{
+  "id": "DocTypeDoctor",
+  "name": "DocTypeDoctor",
+  "version": "1.0.0",
+  "allowTelemetry": true,
+  "icon": "/App_Plugins/DocTypeDoctor/icon.svg",
+  "extensions": [
+    {
+      "name": "Doc Type Doctor Bundle",
+      "alias": "DocTypeDoctor.Bundle",
+      "type": "bundle",
+      "js": "/App_Plugins/DocTypeDoctor/doc-type-doctor.js"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json", 
+    "AuthorDetails": {
+      "Name": "Terningen, Kim Gordon Taanning",
+      "ImageUrl": "https://github.com/Terningen.png"
+    },
+    "Category": "",
+    "Description": "",
+    "LicenseTypes": [ "Free" ],
+    "IssueTrackerUrl": "https://github.com/Terningen/Umbraco.Community.DocTypeDoctor/issues",
+    "PackageType": "Package",
+    "Tags": [],
+    "Title": "Doc Type Doctor "
+  }
