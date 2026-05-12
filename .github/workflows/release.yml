@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: 'src/DocTypeDoctor/Client/package-lock.json'
+          cache-dependency-path: 'DocTypeDoctor/src/DocTypeDoctor/Client/package-lock.json'
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v2
@@ -29,12 +29,12 @@ jobs:
 
       - name: Build Client Assets
         run: |
-          cd src/DocTypeDoctor/Client
+          cd DocTypeDoctor/src/DocTypeDoctor/Client
           npm ci
           npm run build
 
       - name: Build & Pack
-        run: dotnet pack src/DocTypeDoctor/DocTypeDoctor.csproj -c Release /p:Version=${{github.ref_name}}
+        run: dotnet pack DocTypeDoctor/src/DocTypeDoctor/DocTypeDoctor.csproj -c Release /p:Version=${{github.ref_name}}
 
       - name: Push to NuGet
         run: dotnet nuget push **/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
