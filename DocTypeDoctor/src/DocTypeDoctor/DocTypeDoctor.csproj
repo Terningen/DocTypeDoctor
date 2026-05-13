@@ -8,7 +8,7 @@
 
   <PropertyGroup>
     <Product>DocTypeDoctor</Product>
-    <PackageId>DocTypeDoctor</PackageId>
+    <PackageId>Umbraco.Community.DocTypeDoctor</PackageId>
     <Title>Doc Type Doctor </Title>
     <Description>DocTypeDoctor is an Umbraco package that provides analysis tools for document types. It helps identify similar document types, unused properties, composition chains, and property naming issues to improve content model quality and maintainability.</Description>
     <PackageTags>umbraco;umbraco-marketplace</PackageTags>
