@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [17.0.4] - 2026-05-13
+
+### Added
+- Package-specific Umbraco Marketplace JSON file (`umbraco-marketplace-doctypedoctor.json`)
+- Package-specific Umbraco Marketplace README file (`umbraco-marketplace-readme-doctypedoctor.md`)
+
+### Fixed
+- Install command in `README.md` corrected to `dotnet add package DocTypeDoctor`
+- Eliminates all Umbraco Marketplace package validator warnings
+
 ## [17.0.3] - 2026-05-13
 
 ### Fixed

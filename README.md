@@ -32,7 +32,7 @@ Doc Type Doctor helps you analyze and manage your Umbraco document types with ea
 Add the package to an existing Umbraco website (v17+) from NuGet:
 
 ```bash
-dotnet add package Umbraco.Community.DocTypeDoctor
+dotnet add package DocTypeDoctor
 ```
 
 Once installed, the Doc Type Doctor will be available in the Settings section of the Umbraco backoffice, allowing you to analyze your document types and identify potential issues.

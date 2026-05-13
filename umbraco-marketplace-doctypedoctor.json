@@ -1,0 +1,32 @@
+{
+    "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+    "AuthorDetails": {
+      "Name": "Kim Gordon Taanning",
+      "ImageUrl": "https://github.com/Terningen.png"
+    },
+    "Category": "Developer Tools",
+    "Description": "Doc Type Doctor helps you analyze and manage your Umbraco document types with ease. Identify unused properties, find inconsistencies, and keep your content model healthy.",
+    "LicenseTypes": [ "Free" ],
+    "IssueTrackerUrl": "https://github.com/Terningen/DocTypeDoctor/issues",
+    "PackageType": "Package",
+    "Tags": [ "doctype", "editor", "content-model", "analysis", "umbraco" ],
+    "Title": "Doc Type Doctor",
+    "Screenshots": [
+      {
+        "ImageUrl": "https://raw.githubusercontent.com/Terningen/DocTypeDoctor/main/DocTypeDoctor/docs/screenshots/UnusedProperties.png",
+        "Caption": "Unused Properties Analysis"
+      },
+      {
+        "ImageUrl": "https://raw.githubusercontent.com/Terningen/DocTypeDoctor/main/DocTypeDoctor/docs/screenshots/Similarity.png",
+        "Caption": "Similar Document Types Detection"
+      },
+      {
+        "ImageUrl": "https://raw.githubusercontent.com/Terningen/DocTypeDoctor/main/DocTypeDoctor/docs/screenshots/CompositionChains.png",
+        "Caption": "Composition Chain Analysis"
+      },
+      {
+        "ImageUrl": "https://raw.githubusercontent.com/Terningen/DocTypeDoctor/main/DocTypeDoctor/docs/screenshots/NamingIssue.png",
+        "Caption": "Property Naming Issues"
+      }
+    ]
+  }
