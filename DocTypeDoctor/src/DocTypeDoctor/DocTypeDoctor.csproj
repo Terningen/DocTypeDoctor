@@ -10,7 +10,7 @@
     <Product>DocTypeDoctor</Product>
     <PackageId>DocTypeDoctor</PackageId>
     <Title>Doc Type Doctor </Title>
-    <Description>...</Description>
+    <Description>DocTypeDoctor is an Umbraco package that provides analysis tools for document types. It helps identify similar document types, unused properties, composition chains, and property naming issues to improve content model quality and maintainability.</Description>
     <PackageTags>umbraco;umbraco-marketplace</PackageTags>
     <Authors>Terningen</Authors>
     <Copyright>$([System.DateTime]::UtcNow.ToString(`yyyy`)) © Terningen</Copyright>
@@ -19,7 +19,7 @@
     <PackageReadmeFile>README_nuget.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon></PackageIcon>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -39,6 +39,10 @@
   
   <ItemGroup>
     <None Include="..\..\docs\README_nuget.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
