@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [17.0.3] - 2026-05-13
+
+### Fixed
+- Category changed to "Developer Tools" to pass Umbraco Marketplace validation
+- README-nuget.md path fixed for NuGet packaging
+
+## [17.0.2] - 2026-05-13
+
+### Fixed
+- Package ID changed to "DocTypeDoctor" to match NuGet package name
+- Badges updated to use correct package name "DocTypeDoctor"
+- README-nuget.md path corrected for proper packaging
+
 ## [17.0.1] - 2026-05-13
 
 ### Added
