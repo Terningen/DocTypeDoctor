@@ -4,7 +4,7 @@
       "Name": "Kim Gordon Taanning",
       "ImageUrl": "https://github.com/Terningen.png"
     },
-    "Category": "Editor",
+    "Category": "Developer Tools",
     "Description": "Doc Type Doctor helps you analyze and manage your Umbraco document types with ease. Identify unused properties, find inconsistencies, and keep your content model healthy.",
     "LicenseTypes": [ "Free" ],
     "IssueTrackerUrl": "https://github.com/Terningen/DocTypeDoctor/issues",
