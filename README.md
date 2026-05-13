@@ -4,6 +4,10 @@
 [![NuGet](https://img.shields.io/nuget/vpre/Umbraco.Community.DocTypeDoctor?color=0273B3)](https://www.nuget.org/packages/Umbraco.Community.DocTypeDoctor)
 [![GitHub license](https://img.shields.io/github/license/Terningen/Umbraco.Community.DocTypeDoctor?color=8AB803)](LICENSE)
 
+> [!IMPORTANT]
+> ## Version Compatibility
+> - 17.x is compatible with Umbraco version 17.
+
 Doc Type Doctor helps you analyze and manage your Umbraco document types with ease. Identify unused properties, find inconsistencies, and keep your content model healthy.
 
 ## Features
