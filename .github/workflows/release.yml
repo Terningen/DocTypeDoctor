@@ -189,11 +189,18 @@ jobs:
         if: ${{ inputs.dry_run == false }}
         env:
           NEW_VERSION: ${{ steps.version.outputs.new_version }}
-        run: dotnet pack DocTypeDoctor/src/DocTypeDoctor/DocTypeDoctor.csproj -c Release /p:Version=${NEW_VERSION}
+        run: dotnet pack DocTypeDoctor/src/DocTypeDoctor/DocTypeDoctor.csproj -c Release /p:Version=${NEW_VERSION} --output ./artifacts
+
+      - name: Verify package was produced
+        if: ${{ inputs.dry_run == false }}
+        run: |
+          set -euo pipefail
+          ls -la ./artifacts
+          test -n "$(ls ./artifacts/*.nupkg 2>/dev/null)" || { echo '::error::No .nupkg produced'; exit 1; }
 
       - name: Push to NuGet
         if: ${{ inputs.dry_run == false }}
-        run: dotnet nuget push **/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
+        run: dotnet nuget push './artifacts/*.nupkg' -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
 
       - name: Create GitHub Release
         if: ${{ inputs.dry_run == false }}
